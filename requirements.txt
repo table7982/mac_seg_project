@@ -1,0 +1,34 @@
+# 百度街景全景图采集与投影转换系统 - 依赖清单
+# 生成时间: 2026-03-19
+# Python版本要求: >= 3.8
+
+# ========== 核心依赖 ==========
+
+# HTTP请求库 - 用于调用百度地图API
+requests>=2.25.0
+
+# 图像处理库 - 用于全景图拼接和格式转换
+Pillow>=8.0.0
+
+# 数值计算库 - 用于投影转换的矩阵运算
+numpy>=1.19.0
+
+# 百度坐标转换库 - 用于BD09LL与BD09MC互转
+# 该库提供 convertLL2MC 和 convertMC2LL 函数
+bd09convertor>=1.0.0
+
+# ========== 安装命令 ==========
+# 
+# 基础安装:
+#   pip install -r requirements.txt
+#
+# 国内镜像加速安装:
+#   pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+#
+# 开发环境安装(含可选依赖):
+#   pip install -r requirements.txt -r requirements-dev.txt
+#
+# ========== 验证安装 ==========
+#
+# 安装完成后运行以下命令验证:
+#   python -c "import requests; import PIL; import numpy; import bd09convertor; print('✓ 所有依赖安装成功')"
